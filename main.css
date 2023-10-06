@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #f08080;
+    color: #fff;
+}
+
+.container nav li {
+    display:inline-flex;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.container-flex p {
+    text-align: justify;
+}
+
+#sobre-a-loja img {
+    max-width: 350px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.lista-roupa {
+    flex-wrap: wrap;
+}
+
+.lista-roupa li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-roupa li img {
+    max-width: 90%;
+    margin-left:16px ;
+}
+
+
+.lista-roupa h3 {
+    margin: 16px 0;
+    text-align:center;
+    margin-top: 16px;
+}
+
+.lista-roupa li p {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+li button {
+    display: block;
+    padding: 8px 0;
+    cursor: pointer;
+    justify-content: center;
+    width: 90%;
+}
+
+li {
+    justify-content: space-between;
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .container .container-flex {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .container .container-flex p {
+        font-size: 1.5em;
+    }
+    
+    #sobre-a-loja img {
+        margin-right: 0px;
+    }
+
+    .lista-roupa li img {
+        max-width: 350px;
+        padding-left: 0;
+    }
+
+    .lista-roupa li {
+        display:block ;
+        padding-left: 0;
+        font-size: small;
+        margin-right: 0;
+        max-width: 90%;
+    }
+
+    .lista-roupa li img {
+        align-items: center;
+    }
+
+    .lista-roupa button {
+        align-items: center;
+        margin-right: 16px;
+        width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .container-flex {
+        max-width: 100%;
+    }
+
+    .container .container-flex p {
+        font-size: 1em;
+    }
+
+    .lista-roupa img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li button {
+        width: 90%;
+    }
+}
+
